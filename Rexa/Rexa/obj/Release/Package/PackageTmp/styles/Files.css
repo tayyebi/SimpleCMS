@@ -1,0 +1,27 @@
+﻿.Content div{
+    display:inline-block;
+    width: 13.8em;
+    border-radius:1em;
+    border-color:beige;
+    border-width:.1em;
+    padding: 2em;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.30);
+    border-style: solid;
+}
+.Content a{
+    display:block;
+    width:10em;
+    margin:0 auto 2em auto;
+    text-align:center;
+    background-color:white;
+}
+.Content div a {
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    width: 3em;
+}
+.Content div h3{
+    background-color:#808080;
+    font-size:small;
+}

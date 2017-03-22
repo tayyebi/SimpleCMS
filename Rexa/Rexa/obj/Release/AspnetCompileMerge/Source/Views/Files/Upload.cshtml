@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "بارگزاری فایل";
+}
+@Html.ActionLink("بازگشت", "Index")
+<form method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <label for="Name">نام</label>
+    <input type="text" name="Name" />
+
+    <label for="Parvandeh">پرونده</label>
+    <input type="file" name="Parvandeh" />
+
+    <input type="submit" value="بفرست" />
+</form>

@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Rexa.Models.v_Post>
+
+@if (Session["Username"] != null) { 
+    <a class="New" href="~/Post/New/@ViewBag.Id">افزودن جدید</a>
+}
+@foreach (var item in Model)
+{
+<a href="~/Documents/Post/@item.Id">
+    <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+    <h4>@Html.DisplayFor(modelItem => item.Date)</h4>
+    <div>@Html.DisplayFor(modelItem => item.Abstract)</div>
+</a>
+}

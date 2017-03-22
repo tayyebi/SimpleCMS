@@ -1,0 +1,122 @@
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .sf-menu li {
+        position: relative;
+    }
+
+    .sf-menu ul {
+        position: absolute;
+        z-index: 99;
+    }
+
+    .sf-menu > li {
+        display: inline-block;
+    }
+
+    .sf-menu li:hover > ul,
+    .sf-menu li.sfHover > ul {
+        display: block;
+    }
+
+    .sf-menu a {
+        display: block;
+        position: relative;
+        padding: .75em 1em;
+        text-decoration: none;
+        zoom: 1; /* IE7 */
+    }
+
+    .sf-menu ul {
+        min-width: 12em;
+    }
+
+        .sf-menu ul ul {
+            top: 0;
+            right: 100%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+.sf-menu {
+    background-color: #808080;
+}
+
+    .sf-menu a {
+        color: inherit;
+    }
+
+    .sf-menu li {
+        background-color: #808080;
+        color: black;
+        border-radius: .1em;
+        margin: .05em;
+        -webkit-box-shadow: inset 0px 0px 28px -10px rgba(0,0,0,1);
+        -moz-box-shadow: inset 0px 0px 28px -10px rgba(0,0,0,1);
+        box-shadow: inset 0px 0px 28px -10px rgba(0,0,0,1);
+    }
+
+    .sf-menu ul li {
+        background: #808080;
+    }
+
+    .sf-menu li:hover,
+    .sf-menu li.sfHover {
+        background: #dFeEFF;
+    }
+
+
+
+
+
+
+
+.sf-arrows .sf-with-ul {
+    padding-right: 2.5em;
+    *padding-right: 1em;
+}
+
+    .sf-arrows .sf-with-ul:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 1em;
+        margin-top: -3px;
+        height: 0;
+        width: 0;
+        border: 5px solid transparent;
+        border-top-color: #dFeEFF;
+        border-top-color: rgba(255,255,255,.5);
+    }
+
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+    border-top-color: white;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+    margin-top: -5px;
+    margin-right: -3px;
+    border-color: transparent;
+    border-right-color: #dFeEFF;
+    border-right-color: rgba(255,255,255,.5);
+}
+
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+    border-right-color: white;
+}

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Rexa.Models.v_Group>
+@if (ViewData["ParentId"] != null)
+{
+    @Html.ActionLink("بازگشت", "Index", new { id = ViewData["ParentId"] })
+}
+else if (ViewData["ParentId"] == null && ViewData["Id"].ToString() != "")
+{
+    @Html.ActionLink("بازگشت", "Index")
+}
+@Html.ActionLink("جدید", "New", new { id = ViewData["newParentId"] })
+@foreach (var item in Model)
+{
+    <div id="@item.Id">
+        @Html.ActionLink(item.Name, "Index", new { id = item.Id })
+        <div class="Control">
+            <a class="Delete" href="~/Menu/Delete/@item.Id">حذف</a>
+            <a class="Update" href="~/Menu/Update/@item.Id">ویرایش</a>
+        </div>
+    </div>
+}

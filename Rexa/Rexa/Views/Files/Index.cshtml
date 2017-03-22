@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Rexa.Models.v_File>
+@{
+    ViewBag.Title = "فایل ها";
+}
+
+@Html.ActionLink("بارگزاری", "Upload")
+@foreach (var item in Model)
+{
+    <div>
+        <h3>@Html.DisplayFor(modelItem => item.Id)</h3>
+        <h4>@Html.DisplayFor(modelItem => item.Name)</h4>
+        @Html.ActionLink("دانلود", "Download", new { controller = "Documents", id = item.Id })
+        @Html.ActionLink("ویرایش", "Update", new { id = item.Id })
+        @Html.ActionLink("حذف", "Drop", new { id = item.Id })
+    </div>
+}

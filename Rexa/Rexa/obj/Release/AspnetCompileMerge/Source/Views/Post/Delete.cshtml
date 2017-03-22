@@ -1,0 +1,9 @@
+﻿@model Rexa.Models.v_Post
+@{
+    ViewBag.Title = "حذف " + Model.Title;
+}
+<form method="post" enctype="application/x-www-form-urlencoded">
+    <input type="text" name="Title" value="@Model.Title" readonly="readonly" />
+    <input type="submit" value="مطمئنم! حذف کن" />
+    @Html.ActionLink("خیر! منصرف شدم", "Post", new { controller = "Documents" , id = Model.Id })
+</form>

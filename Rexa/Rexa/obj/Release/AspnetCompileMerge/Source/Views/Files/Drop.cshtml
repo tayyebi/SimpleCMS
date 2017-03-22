@@ -1,0 +1,9 @@
+﻿@model Rexa.Models.v_File
+@{
+    ViewBag.Title = "حذف " + Model.Id;
+}
+@Html.ActionLink("بازگشت", "Index")
+<form method="post">
+    <input value="@Model.Name" readonly />
+    <input type="submit" value="حذف این پرونده" />
+</form>

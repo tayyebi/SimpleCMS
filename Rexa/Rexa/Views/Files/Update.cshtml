@@ -1,0 +1,19 @@
+﻿@model Rexa.Models.v_File
+@{
+    ViewBag.Title = "به روز رسانی فایل: " + Model.Name;
+}
+@Html.ActionLink("بازگشت", "Index")
+<form method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <label for="Name">نام</label>
+    <input type="text" name="Name" value="@Model.Name" />
+
+    <label for="Parvandeh">پرونده</label>
+    <p>
+        اگر قصد به روز رسانی اصل فایل را ندارید، آن را بدون تغییر رها کنید.
+    </p>
+    <input type="file" name="Parvandeh" />
+
+    <input type="submit" value="به روز رسانی" />
+</form>

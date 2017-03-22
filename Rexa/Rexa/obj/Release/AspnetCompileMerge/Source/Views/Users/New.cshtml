@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "کاربر جدید";
+}
+<form method="post" enctype="application/x-www-form-urlencoded">
+    <label for="Username">نام کاربری</label>
+    <input type="text" name="Username"/>
+
+    <label for="Fullname">اسم</label>
+    <input type="text" name="Fullname" />
+
+    <label for="Password">رمز</label>
+    <input type="password" name="Password" />
+
+    <label for="Confirm">تکرار رمز</label>
+    <input type="password" name="Confirm" />
+
+
+    <label for="IsAdmin">
+        <input type="checkbox" name="IsAdmin">
+        ادمین باشه؟
+    </label>
+
+    <input type="submit" value="ثبت" />
+    @Html.ActionLink("قصد ثبت ندارم", "Index", new { controller = "Users" })
+</form>

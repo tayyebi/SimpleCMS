@@ -1,0 +1,20 @@
+﻿@model Rexa.Models.v_User
+@{
+    ViewBag.Title = "ویرایش " + Model.Fullname;
+}
+<form method="post" enctype="application/x-www-form-urlencoded">
+    <label for="Title">اسم</label>
+    <input type="text" name="Fullname" value="@Model.Fullname" />
+
+    <label for="Title">نام کاربری</label>
+    <input type="text" name="Username" value="@Model.Username" />
+
+    <label for="IsAdmin">
+        <input type="checkbox" name="IsAdmin">
+        حالا ادمین باشه؟
+    </label>
+    
+    @Html.ActionLink("کلمه عبور", "Password", new { id = Model.Username })
+    <input type="submit" value="به روز رسانی" />
+    @Html.ActionLink("قصد ویرایش ندارم", "Admin", new { controller = "Home" })
+</form>

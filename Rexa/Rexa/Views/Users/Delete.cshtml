@@ -1,0 +1,10 @@
+﻿@model Rexa.Models.v_User
+@{
+    ViewBag.Title = "حذف " + Model.Username;
+}
+<form method="post" enctype="application/x-www-form-urlencoded">
+    <label for="Fullname">@Model.Username</label>
+    <input type="text" name="Fullname" value="@Model.Fullname" readonly="readonly" />
+    <input type="submit" value="خوب... آره. پاکش کن." />
+    @Html.ActionLink("نه نه! اشتباه شد", "Index", new { controller = "Users"})
+</form>

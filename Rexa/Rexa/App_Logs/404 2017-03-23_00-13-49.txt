@@ -1,0 +1,5 @@
+DateTime: Thursday, March 23, 201712:13:49 AM
+HttpStatusCode: 404
+Source: System.Web.Mvc
+Message: A public action method 'Index' was not found on controller 'WebInterface.Controllers.LogController'.
+HashCode: 63062333

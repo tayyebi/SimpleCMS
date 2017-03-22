@@ -1,0 +1,9 @@
+﻿@model Rexa.Models.v_Group
+@{
+    ViewBag.Title = "حذف گروه \"" + Model.Name + "\"";
+}
+<form method="post" enctype="application/x-www-form-urlencoded">
+    <input type="text" name="Title" value="@Model.Name" readonly="readonly" />
+    <input type="submit" value="مطمئنم! حذف کن" />
+    @Html.ActionLink("خیر! منصرف شدم", "Index", new { controller = "Menu" , id = Model.Id })
+</form>

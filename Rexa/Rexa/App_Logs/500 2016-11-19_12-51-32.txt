@@ -1,0 +1,5 @@
+DateTime: Saturday, November 19, 201612:51:32 PM
+HttpStatusCode: 500
+Source: System.Web
+Message: c:\Projects\SimpleCms\Rexa\Rexa\Rexa\Views\Menu\Index.cshtml(2): error CS0252: Warning as Error: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'string'
+HashCode: 19731926

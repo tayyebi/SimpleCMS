@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "منوی جدید";
+}
+<form method="post" enctype="application/x-www-form-urlencoded">
+    <input type="hidden" name="ParentId" value="@ViewData["newParentId"]"/>
+
+    <label for="Title">عنوان</label>
+    <input type="text" name="Name"/>
+
+    <label for="Publish">
+        <input type="checkbox" name="Publish">
+        نمایش برای عموم
+    </label>
+    <input type="submit" value="ایجاد" />
+    @Html.ActionLink("انصراف", "Index", new { Id= ViewData["newParentId"] } )
+</form>

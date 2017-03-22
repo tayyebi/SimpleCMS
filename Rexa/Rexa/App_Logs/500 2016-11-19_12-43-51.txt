@@ -1,0 +1,5 @@
+DateTime: Saturday, November 19, 201612:43:51 PM
+HttpStatusCode: 500
+Source: System.Web
+Message: c:\Users\admin\AppData\Local\Temp\Temporary ASP.NET Files\root\fcd9f307\3c88c739\App_Web_index.cshtml.a842fe6.si3xzaxg.0.cs(31): error CS0234: The type or namespace name 'v_Group' does not exist in the namespace 'DbController' (are you missing an assembly reference?)
+HashCode: 8348632

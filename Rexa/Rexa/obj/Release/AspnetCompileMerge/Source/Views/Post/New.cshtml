@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "پست جدید";
+}
+<form method="post" enctype="application/x-www-form-urlencoded">
+    <label for="Title">عنوان</label>
+    <input type="text" placeholder="عنوان مطلب را همینجا وارد کنید" name="Title"/>
+
+    <label for="Abstract">چکیده</label>
+    <input type="text" placeholder="کوتاه درباره ی مطلب بنویسید" name="Abstract" />
+
+    <label for="Body">رسانه</label>
+    <textarea name="Body" tooltip="متن رو اینجا بنویسید"></textarea>
+
+    <label for="Publish">
+        <input type="checkbox" name="Publish">
+        نمایش برای عموم
+    </label>
+    <input type="submit" value="ثبت" />
+</form>

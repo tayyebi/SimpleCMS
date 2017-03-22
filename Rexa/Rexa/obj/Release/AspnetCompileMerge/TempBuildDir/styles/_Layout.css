@@ -1,0 +1,94 @@
+﻿@import url("__message.css");
+@import url("__input.css");
+@import url("__animation.css");
+@import url("__table.css");
+
+@import url("superfish.css");
+
+@font-face {
+    font-family: 'Main';
+    src: url('../fonts/AdobeArabic-Regular.otf') format('otf'), url('../fonts/AdobeArabic-Bold.otf'), url('../fonts/AdobeArabic-Italic.otf'), url('../fonts/AdobeArabic-BoldItalic.otf');
+}
+
+* {
+    font-family: 'Main';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 3em;
+	background-image:url('background-pattern.jpg');
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+    header h1 {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.20);
+        display: block;
+        color: white;
+        -webkit-box-shadow: inset 0px 0px 28px -10px rgba(0,0,0,1);
+        -moz-box-shadow: inset 0px 0px 28px -10px rgba(0,0,0,1);
+        box-shadow: inset 0px 0px 28px -10px rgba(0,0,0,1);
+        margin-bottom: 1em;
+    }
+
+    header .User {
+        margin: 1.5em auto 1em auto;
+        text-align: center;
+        display: block;
+        padding: 1em;
+        color: black;
+        padding-right: 3em;
+        width: 15em;
+        background: green url(138662.svg) right no-repeat;
+        background: rgba(210,255,82,1) url(138662.svg) right no-repeat;
+        background: -moz-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%) url(138662.svg) right no-repeat;
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(210,255,82,1)), color-stop(100%, rgba(145,232,66,1))) url(138662.svg) right no-repeat;
+        background: -webkit-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%) url(138662.svg) right no-repeat;
+        background: -o-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%) url(138662.svg) right no-repeat;
+        background: -ms-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%) url(138662.svg) right no-repeat;
+        background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%) url(138662.svg) right no-repeat;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=0 ) url(138662.svg) right no-repeat;
+    }
+
+        header .User .Username {
+            color: #969696;
+        }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background-color: #000000;
+    display: none;
+    color: white;
+}
+
+.Content {
+    padding-top: 10em;
+    padding: 2em;
+    display: block;
+    margin: 0 auto 0 auto;
+	width:30em;
+    color: black;
+    background: url('top right border.svg') no-repeat top right rgba(255,255,255,0.5);
+    background-size: auto 10em;
+	border-radius:1em;
+}
+
+.sf-menu {
+    width: 100%;
+    height: 3em;
+    top: 0em;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding-top: .1em;
+}

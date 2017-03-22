@@ -1,0 +1,33 @@
+﻿.Content{
+    text-align:center;
+}
+.Content > div{
+    margin:1em;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+
+}
+.Content a{
+    margin:1em auto 1em auto;
+    text-shadow:0 0 .1em #00ff21;
+}
+.Content .Control .Delete{
+        background: rgba(255, 255, 255, 0.80) url('Recycle-Bin-icon.png') no-repeat center;
+
+}
+.Content .Control .Update{
+
+    background: rgba(255, 255, 255, 0.80) url('edit-icon.png') no-repeat center;
+
+}
+.Content .Control .Delete, .Content .Control .Update{
+padding:.5em;
+margin:.1em;
+display:inline-block;
+    background-size:auto 100%;
+    border:white solid .1em;
+    border-radius:1em;
+    
+}

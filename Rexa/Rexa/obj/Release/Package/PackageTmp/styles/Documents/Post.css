@@ -1,0 +1,37 @@
+﻿.Content .Title, .Content .Username, .Content .Date, .Content .Control{
+    text-align:center;
+    margin:0;
+    padding:1em; 
+    color:white;
+background: rgb(96,108,136);
+background: -moz-linear-gradient(top,  rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+background: linear-gradient(to bottom,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 );
+}
+header h1{
+    display:none;
+}
+.Content .Body{
+    padding:1em;
+    background-color:white;
+}
+
+.Content .Control .Delete{
+        background: rgba(255, 255, 255, 0.80) url('../Recycle-Bin-icon.png') no-repeat center;
+
+}
+.Content .Control .Update{
+
+    background: rgba(255, 255, 255, 0.80) url('../edit-icon.png') no-repeat center;
+
+}
+.Content .Control .Delete, .Content .Control .Update{
+padding:2em;
+margin:.5em;
+display:inline-block;
+    background-size:auto 100%;
+    border:white solid .1em;
+    border-radius:1em;
+    
+}

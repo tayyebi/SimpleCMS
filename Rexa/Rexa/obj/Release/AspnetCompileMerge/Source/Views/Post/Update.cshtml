@@ -1,0 +1,23 @@
+﻿@model Rexa.Models.v_Post
+@{
+    ViewBag.Title = "ویرایش " + Model.Title;
+}
+<form method="post" enctype="application/x-www-form-urlencoded">
+    <input type="hidden" name="GroupId" value="@Model.GroupId"/>
+
+    <label for="Title">عنوان</label>
+    <input type="text" name="Title" value="@Model.Title" />
+
+    <label for="Abstract">چکیده</label>
+    <input type="text" name="Abstract" value="@Model.Abstract" />
+
+    <label for="Body">رسانه</label>
+    <textarea name="Body">@Model.Body</textarea>
+
+    <label for="Publish">
+        <input type="checkbox" name="Publish">
+        نمایش برای عموم
+    </label>
+    <input type="submit" value="به روز رسانی" />
+    @Html.ActionLink("قصد ویرایش ندارم", "Post", new { controller = "Documents", id = Model.Id })
+</form>

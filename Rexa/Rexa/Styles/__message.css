@@ -1,0 +1,51 @@
+﻿.Message {
+    margin: 1em auto 1em auto;
+    text-align: center;
+    display: block;
+    padding:.5em;
+    padding-right: 2em;
+    color: aqua;
+    padding-right: 3em;
+    width: 15em;
+    border-radius: .2em;
+
+    /*
+    -webkit-animation: seconds 10.0s forwards;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 5s;
+    animation: seconds 10.0s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+    */
+
+    background:url('1476276674_Alert.png') no-repeat right #8a6c08;
+    background-size:auto 2em;
+}
+
+@-webkit-keyframes seconds {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes seconds {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}

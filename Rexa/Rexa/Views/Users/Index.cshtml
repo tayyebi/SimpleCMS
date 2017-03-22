@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Rexa.Models.v_User>
+@{
+    ViewBag.Title = "کاربران سیستم";
+}
+@Html.ActionLink("جدید", "New")
+<table>
+    <tr>
+        <th>
+            نام کاربری
+        </th>
+        <th>
+            اسم
+        </th>
+        <th>
+
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Username</td>
+            <td>
+                @item.Fullname
+            </td>
+            <td>
+                @Html.ActionLink("ویرایش", "Update", new { id = item.Username })
+                @Html.ActionLink("حذف", "Delete", new { id = item.Username })
+            </td>
+        </tr>
+    }
+</table>

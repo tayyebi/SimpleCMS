@@ -1,0 +1,35 @@
+﻿.Content > a{
+    display:inline-block;
+    width: 8em;
+    border-radius:1em;
+    border-color:beige;
+    border-width:.1em;
+    padding: 2em;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.30);
+    border-style: solid;
+    height: 10em;
+}
+.Content > a:hover{
+    background: rgb(206,219,233);
+    background: -moz-linear-gradient(top,  rgba(206,219,233,1) 0%, rgba(170,197,222,1) 17%, rgba(97,153,199,1) 50%, rgba(58,132,195,1) 51%, rgba(65,154,214,1) 59%, rgba(75,184,240,1) 71%, rgba(58,139,194,1) 84%, rgba(38,85,139,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%);
+    background: linear-gradient(to bottom,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 );
+}
+
+.Content div h3{
+    background-color:#808080;
+    font-size:small;
+}
+.Content .New{
+    margin:0 auto 0 auto;
+    background-image:url('../Plus-icon.png');
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    display:block;
+    height: .5em;
+}
+.Content .New:hover{
+    background:rgb(206,219,233);
+}
